@@ -7,6 +7,7 @@ let canvasSize = {
 let rewardsGiven =[];
 let realPerson = false;
 let denied = false;
+let checkCounter = 0; 
 
 const socket = io();
 socket.on('verification', function(msg) {
@@ -27,6 +28,8 @@ function setup() {
     input.rows = 5;
     
     openButton = createButton("this is how i feel i guess");
+    checkbox = createCheckbox('check me ;)', false);
+    checkbox.changed(checkTheBox);
     openButton.mousePressed(feelCheck);
     textFont(tangerine)
     textSize(44)
@@ -91,4 +94,22 @@ const sendFeeling = (feel) => {
     })
     .then(function(res){ console.log(res) })
     .catch(function(res){ console.log(res) })
+ }
+
+ const checkTheBox = () => {
+    checkCounter++;
+    if(checkCounter==1){
+        checkbox2 = createCheckbox("mmm that's nice", false);
+        checkbox2.changed(checkTheBox);
+    }
+    if(checkCounter==2){
+        checkbox2 = createCheckbox('oh yeah ... 🤤', false);
+        checkbox2.changed(checkTheBox);
+    }
+
+    if(checkCounter==3){
+        checkbox3 = createCheckbox('ok im done thanks', false);
+        checkbox3.changed(checkTheBox);
+    }
+
  }
