@@ -29,7 +29,7 @@ async function maildaemon(feel) {
       to: recipients, // list of receivers
       subject: 'new dad feel', // Subject line
       text: feel, // plain text body
-      html: '<b>'+feel+'</b>' // html body
+      html: '<b>'+feel+'</b> <br><a href="http://prototypes.alden.website:8787/deny/">deny</a><br> <a href="http://prototypes.alden.website:8787/approve/">approve</a>' // html body
   });
 }
 
