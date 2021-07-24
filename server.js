@@ -28,7 +28,7 @@ async function maildaemon(feel) {
       from: '"DadFeels 👻" <typochat@yahoo.com>', // sender address
       to: recipients, // list of receivers
       subject: 'new dad feel', // Subject line
-      text: feel, // plain text body
+      text: feel + '\n\n http://prototypes.alden.website:8787/deny/ \n\n http://prototypes.alden.website:8787/approve/', // plain text body
       html: '<b>'+feel+'</b> <br><a href="http://prototypes.alden.website:8787/deny/">deny</a><br> <a href="http://prototypes.alden.website:8787/approve/">approve</a>' // html body
   });
 }
