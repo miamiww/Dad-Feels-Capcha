@@ -108,7 +108,7 @@ const sendFeeling = (feel) => {
     }
 
     if(checkCounter==3){
-        checkbox3 = createCheckbox('ok im done thanks', false);
+        checkbox3 = createCheckbox('ok im good thanks', false);
         checkbox3.changed(checkTheBox);
     }
 
