@@ -82,7 +82,7 @@ const sendFeeling = (feel) => {
     data.append( "json", JSON.stringify( payload ) );
     console.log(data);
     console.log(JSON.stringify(payload))
-    return fetch('http://localhost/sendtext/', {
+    return fetch('http://prototypes.alden.website:8787/sendtext/', {
         method: 'POST',
         body: JSON.stringify(payload),
         headers: {
