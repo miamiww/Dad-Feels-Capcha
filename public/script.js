@@ -38,7 +38,7 @@ function draw() {
     if(!realPerson && !denied){
         push()
         fill(0)
-        text("PROVE YOU ARE HUMAN BY TELLING ME HOW YOU FEEL ABOUT YOUR DAD",10,canvasSize.y-canvasSize.y/2,canvasSize.x, canvasSize.y)
+        text("PROVE YOU ARE HUMAN BY TELLING ME HOW YOU FEEL ABOUT YOUR DAD. RESULTS TAKE LIKE 5 MINUTES THIS IS A VERY FINE TUNED AND SENSITIVE SYSTEM",10,canvasSize.y-canvasSize.y/2,canvasSize.x, canvasSize.y)
         pop() 
     }
     if(realPerson){
