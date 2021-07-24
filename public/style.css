@@ -1,0 +1,23 @@
+canvas {
+    border:20px solid;
+    -webkit-animation:Border 5s infinite alternate;
+    animation:Border 5s infinite alternate;
+
+}
+
+@-webkit-keyframes Border {
+    0% {border-color: crimson;}
+    20% {border-color: orange;}
+    40% {border-color: goldenrod;}
+    60% {border-color: green;}
+    80% {border-color: cyan;}
+    100% {border-color: purple}
+}
+@keyframes Border {
+    0% {border-color: crimson;}
+    20% {border-color: orange;}
+    40% {border-color: goldenrod;}
+    60% {border-color: green;}
+    80% {border-color: cyan;}
+    100% {border-color: purple}
+}

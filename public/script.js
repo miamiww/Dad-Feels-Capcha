@@ -1,8 +1,8 @@
 let word;
 let definition = "";
 let canvasSize = {
-    x: window.innerWidth -2,
-    y: window.innerHeight -100
+    x: window.innerWidth -46,
+    y: window.innerHeight -140
 }
 let rewardsGiven =[];
 let realPerson = false;
