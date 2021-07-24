@@ -112,4 +112,9 @@ const sendFeeling = (feel) => {
         checkbox3.changed(checkTheBox);
     }
 
+    if(checkCounter==10){
+        checkbox3 = createCheckbox('wow ur frisky... give me a call 5615989709', false);
+        checkbox3.changed(checkTheBox);
+    }
+
  }
